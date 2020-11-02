@@ -137,6 +137,7 @@ img {
     -webkit-animation: resetGlow 1s ease-in-out infinite alternate;
     -moz-animation: resetGlow 1s ease-in-out infinite alternate;
     animation: resetGlow 1s ease-in-out infinite alternate;
+    animation-iteration-count: infinite;
 }
 
 nav {
