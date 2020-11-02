@@ -1,0 +1,85 @@
+body {
+    margin-top: 0;
+}
+
+#bottomSpacer {
+    padding: 5%;
+}
+
+#creepyTitle {
+    -webkit-animation: resetGlow 1s ease-in-out infinite alternate;
+    -moz-animation: resetGlow 1s ease-in-out infinite alternate;
+    animation: resetGlow 1s ease-in-out infinite alternate;
+}
+
+div#rightSide {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 67%;
+    background-color: black;
+}
+
+div#leftSide {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+div#spacer {
+    padding: 7%;
+}
+
+h1.gameOver {
+    text-shadow: 1px 7px rgb(48, 241, 48);
+}
+
+img {
+    position: absolute;
+}
+
+#levelResult {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+nav div h1 {
+    font-family: 'Creepster', cursive;
+    font-size: 51px;
+    color: rgb(250, 0, 0);
+    padding: 0px;
+    text-decoration: none;
+    margin-bottom: 1%;
+}
+
+nav#levelResult {
+    position: fixed;
+    top: 300px;
+    background-color: transparent;
+}
+
+#reset {
+    text-align: center;
+    -webkit-animation: resetGlow 1s ease-in-out infinite alternate;
+    -moz-animation: resetGlow 1s ease-in-out infinite alternate;
+    animation: resetGlow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes resetGlow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+      }
+      to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+      }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <title>MATCHING GAME</title>
+</head>
+<body onload="generateFaces()">
+    <nav>
+        <div>
+            <h1 id="creepyTitle">Matching Game</h1>
+        </div>
+        <div>
+            <h1 id="reset">RESET</h1>
+        </div>
+    </nav>
+    <div id="spacer">
+
+    </div>
+    <nav id="levelResult">
+        <div id="row">
+            <div>
+                <h1 style="color: darkgray; font-size: 33px">Level: <span id="level" style="color: red; font-size: 29px; font-family: Arial, Helvetica, sans-serif;"></span></h1>
+            </div>
+            <div>
+                <h1 style="color: darkgray; font-size: 33px;">Your last guess: <span id="lastGuess" style="color: red; font-size: 29px; font-family: Arial, Helvetica, sans-serif;"></span></h1>
+            </div>
+            <div class="gameOver" style="display: none">
+                <h1 class="gameOver">GAME OVER!!!</h1>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h3>The left and right side looks <span style="color: red"><i>almost</i></span> identical except there is <span style="color: red"><i><strong>one extra face on the left</strong></i></span>. Find and select that extra face!</h3>   
+    </section>
+    <div id="leftSide"></div>
+    <div id="rightSide"></div>
+    <div id="bottomSpacer"></div>
+    <script src="index.js"></script>
+</body>
+</html>
