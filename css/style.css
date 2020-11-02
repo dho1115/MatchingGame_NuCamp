@@ -1,9 +1,83 @@
+/* index.html */
+#absoluteBackground {
+    position: absolute;
+    left: 23%;
+    height: 100%;
+    max-height: 100%;
+    width: 55%;
+    max-width: 55%;
+}
+
+body#indexPage {
+    background-color: rgb(14, 13, 13);
+}
+
+#cover {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    animation-name: changeOpacity;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    height: 100%;
+    width: 100%;
+}
+
+div#enter {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+div#enter a h1 {
+    position: absolute;
+    opacity: 0;
+    left: 41%;
+    top: 65%;
+    color: red;
+    font-size: 100px;
+    letter-spacing: 1rem;
+    font-family: 'Creepster', cursive;
+    animation-name: enterTextShadow;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+    animation-duration: 21s;
+    pointer-events: none;
+}
+
+div#leftSide, div#rightSide {
+    margin-bottom: 1%;
+}
+
+@keyframes enterTextShadow {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 0px 9px 3px rgb(107, 224, 11);
+        opacity: 1;
+    }
+}
+
+@keyframes changeOpacity {
+    0% {opacity: 1;}
+    25% {opacity: 0.9}
+    50% {opacity: 0.7;}
+    75% {opacity: 0.7;}
+    100% {opacity: 0.5;}
+}
+
+/* game.html */
 body {
     margin-top: 0;
 }
 
 #bottomSpacer {
-    padding: 5%;
+    margin-bottom: 5%;
 }
 
 #creepyTitle {
@@ -31,6 +105,15 @@ div#spacer {
     padding: 7%;
 }
 
+#heading {
+    font-family: 'Creepster', cursive;
+    font-size: 70px;
+    letter-spacing: 3px;
+    animation-name: enterTextShadow;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
 h1.gameOver {
     text-shadow: 1px 7px rgb(48, 241, 48);
 }
@@ -42,6 +125,18 @@ img {
 #levelResult {
     display: flex;
     justify-content: center;
+}
+
+#leave {
+    font-size: 30px;
+}
+
+#leave, #reset {
+    padding-top: 5px;
+    text-align: center;
+    -webkit-animation: resetGlow 1s ease-in-out infinite alternate;
+    -moz-animation: resetGlow 1s ease-in-out infinite alternate;
+    animation: resetGlow 1s ease-in-out infinite alternate;
 }
 
 nav {
@@ -69,10 +164,7 @@ nav#levelResult {
 }
 
 #reset {
-    text-align: center;
-    -webkit-animation: resetGlow 1s ease-in-out infinite alternate;
-    -moz-animation: resetGlow 1s ease-in-out infinite alternate;
-    animation: resetGlow 1s ease-in-out infinite alternate;
+    margin-top: 0px;
 }
 
 @-webkit-keyframes resetGlow {
